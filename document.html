@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    </script>
+    <br>
+    <script>
+        document.write(7 + 5);
+    </script>
+    <br>
+    <button type="button" onclick="document.getElementById('bulb').src='images/bulb_on.jpg'">Turn On</button>
+    <img id="bulb" src="images/bulb_on.jpg" alt="" style="width: 300px;">
+    <button type="button" onclick="document.getElementById('bulb').src='images/bulb_off.jpg'">Turn Off</button>
+    
+    <br>
+    <script>
+    var fullName = "John Doe";
+    let age = 30;
+    document.write("<br>My name is " + fullName + " and I am " + age + " years old.");
+
+    document.write("<h4>Do-while loop:</h4>");
+    let j = 9;
+    do {
+        document.write("<br>The value of j is: " + j);
+        j+=2;
+    } while (j < 13);
+    document.write("<h4>While loop:</h4>");
+    let i = 9;
+    while (i < 13) {
+        document.write("<br>The value of i is: " + i);
+        i+=2;
+    }
+    document.write("<h4>For loop:</h4>");
+    for (let k = 12; k < 23; k+=2) {
+        document.write("<br>The value of k is: " + k);
+    }
+
+    <select id="mySelect" onchange="myFunction()">
+        <option value="Option 1">Option 1</option>
+        <option value="Option 2">Option 2</option>
+        <option value="Option 3">Option 3</option>
+
+    </select>
+    </script>
+    
+</body>
+</html>
